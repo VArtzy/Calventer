@@ -84,6 +84,7 @@ while nilai == True:
             print(" ")
             print("Type 'next'/'lang'!, your key isn't valid!")
             print(" ")
+# Indonesian
     elif lang == "IND":
         input1 = input("Selamat datang di Calventer 1.0!\nProgram kalkulator yang sangat pintar!\nketik 'next' untuk ke dalam kalkulatornya!\nBahasamu sekarang IND/indonesian!\nset bahasa kamu dengan, tulis 'lang'!\nuntuk keluar dari program, ketik 'exit'!\n\nInput : ")
         if "next" == input1:
@@ -157,6 +158,7 @@ while nilai == True:
             print(" ")
             print("Ketik 'next'/'lang'!, kata tidak valid!")
             print(" ")
+# Japanese
     elif lang == "JAP":
         input1 = input("Calventer 1.0へようこそ！\n超スマートなプログラム計算機！\nタイプ 'next' 電卓に行く!\nデフォルトの言語は JAP/日本!\n言語を設定して入力 'lang'!\nプログラムの終了には 'exit'!\n\n入力 : ")
         if "next" == input1:
