@@ -1,48 +1,54 @@
-# Calventer 1.0
+# Calventer 1.1
 
 # Configuration!
 nilai = True # set calculator on/off (true/false)
-nilai2 = True # loop (do not change this!)\
+nilai2 = True # loop (do not change this!)
 nilai3 = True # loop (do not change this!)
+nilais = True # loop (do not change this!)
 lang = "EN" # variable to change language
 
 
 # do not enter this area!!!
-# English
 while nilai == True:
     print(" ") 
     if lang == "EN":
-        input1 = input("Welcome to Calventer 1.0!\nThe super smart program calculator!\ntype 'next' to go in calculator!\nYour default Language is EN/english!\nSet you language, type 'lang'!\nfor exit for program, type 'exit'!\n\nInput : ")
+        input1 = input("Welcome to Calventer 1.1!\nThe super smart program calculator!\ntype 'next' to go in calculator!\nYour default Language is EN/english!\nSet you language, type 'lang'!\nfor exit for program, type 'exit'!\n\nInput : ")
         if "next" == input1:
             nilai = False
+            nilais = True
             nilai2 = True
-            operation = input("What's the operation (+,-,*,:): ")
-            num1 = float(input("First Number: "))
-            num2 = float(input("Second Number: "))
-            if operation == "+":
-                hasil = num1 + num2
-            elif operation == "-":
-                hasil = num1 - num2
-            elif operation == "*":
-                hasil = num1 * num2
-            elif operation == ":":
-                hasil = num1 / num2
-            else:
-                print("Invalid operation!, type (+,-,*,:)!!! ")
-            print(" ")
-            print("Answer of " + str(num1) + " " + str(operation) + " " + str(num2) + " is: " + str(hasil))
-            print(" ")
-            while nilai2 == True:
-                playagain = input("Wanna play again? (yes/no): ")
-                if playagain == "yes":
-                    nilai = True
-                    nilai2 = False
-                elif playagain == "no":
-                    nilai2 = False
-                    print("Thanks to playing!!!")
+            while nilais == True:
+                operation = input("What's the operation (+,-,*,:): ")
+                num1 = float(input("First Number: "))
+                num2 = float(input("Second Number: "))
+                if operation == "+":
+                    hasil = num1 + num2
+                elif operation == "-":
+                    hasil = num1 - num2
+                elif operation == "*":
+                    hasil = num1 * num2
+                elif operation == ":":
+                    hasil = num1 / num2
                 else:
-                    nilai = True
-                    print("Type yes or no you noob!!!!! ")
+                    print("Invalid operation!, type (+,-,*,:)!!! ")
+                print(" ")
+                print("Answer of " + str(num1) + " " + str(operation) + " " + str(num2) + " is: " + str(hasil))
+                print(" ")
+                nilai2 = True
+                while nilai2 == True:
+                    playagain = input("Wanna play again? (yes/no): ")
+                    if playagain == "yes":
+                        nilai = False
+                        nilai2 = False
+                        nilais = True
+                    elif playagain == "no":
+                        nilai2 = False
+                        nilai = True
+                        nilais = False
+                        print("Thanks to playing!!!")
+                    else:
+                        nilai = True
+                        print("Type yes or no you noob!!!!! ")
         elif "lang" == input1:
             nilai = False
             nilai3 = True
@@ -86,37 +92,43 @@ while nilai == True:
             print(" ")
 # Indonesian
     elif lang == "IND":
-        input1 = input("Selamat datang di Calventer 1.0!\nProgram kalkulator yang sangat pintar!\nketik 'next' untuk ke dalam kalkulatornya!\nBahasamu sekarang IND/indonesian!\nset bahasa kamu dengan, tulis 'lang'!\nuntuk keluar dari program, ketik 'exit'!\n\nInput : ")
+        input1 = input("Selamat datang di Calventer 1.1!\nProgram kalkulator yang sangat pintar!\nketik 'next' untuk ke dalam kalkulatornya!\nBahasamu sekarang IND/indonesian!\nset bahasa kamu dengan, tulis 'lang'!\nuntuk keluar dari program, ketik 'exit'!\n\nInput : ")
         if "next" == input1:
             nilai = False
+            nilais = True
             nilai2 = True
-            operation = input("Operasi apa yang kamu pilih? (+,-,*,:): ")
-            num1 = float(input("Angka Pertama: "))
-            num2 = float(input("Angka Kedua: "))
-            if operation == "+":
-                hasil = num1 + num2
-            elif operation == "-":
-                hasil = num1 - num2
-            elif operation == "*":
-                hasil = num1 * num2
-            elif operation == ":":
-                hasil = num1 / num2
-            else:
-                print("Operation tidak diketahui!, ketik (+,-,*,:)!!! ")
-            print(" ")
-            print("Jawaban dari " + str(num1) + " " + str(operation) + " " + str(num2) + " adalah: " + str(hasil))
-            print(" ")
-            while nilai2 == True:
-                playagain = input("Main lagi? (yes/no): ")
-                if playagain == "yes":
-                    nilai = True
-                    nilai2 = False
-                elif playagain == "no":
-                    nilai2 = False
-                    print("Terimakasih sudah bermain!!!")
+            while nilais == True:
+                operation = input("Operasi apa yang kamu pilih? (+,-,*,:): ")
+                num1 = float(input("Angka Pertama: "))
+                num2 = float(input("Angka Kedua: "))
+                if operation == "+":
+                    hasil = num1 + num2
+                elif operation == "-":
+                    hasil = num1 - num2
+                elif operation == "*":
+                    hasil = num1 * num2
+                elif operation == ":":
+                    hasil = num1 / num2
                 else:
-                    nilai = True
-                    print("ketik yes atau no noob!!!!! ")
+                    print("Operation tidak diketahui!, ketik (+,-,*,:)!!! ")
+                print(" ")
+                print("Jawaban dari " + str(num1) + " " + str(operation) + " " + str(num2) + " adalah: " + str(hasil))
+                print(" ")
+                nilai2 = True
+                while nilai2 == True:
+                    playagain = input("Main lagi? (yes/no): ")
+                    if playagain == "yes":
+                        nilai = False
+                        nilai2 = False
+                        nilais = True
+                    elif playagain == "no":
+                        nilai2 = False
+                        nilai = True
+                        nilais = False
+                        print("Terimakasih sudah bermain!!!")
+                    else:
+                        nilai = True
+                        print("ketik yes atau no noob!!!!! ")
         elif "lang" == input1:
             nilai = False
             nilai3 = True
@@ -160,37 +172,43 @@ while nilai == True:
             print(" ")
 # Japanese
     elif lang == "JAP":
-        input1 = input("Calventer 1.0へようこそ！\n超スマートなプログラム計算機！\nタイプ 'next' 電卓に行く!\nデフォルトの言語は JAP/日本!\n言語を設定して入力 'lang'!\nプログラムの終了には 'exit'!\n\n入力 : ")
+        input1 = input("Calventer 1.1へようこそ！\n超スマートなプログラム計算機！\nタイプ 'next' 電卓に行く!\nデフォルトの言語は JAP/日本!\n言語を設定して入力 'lang'!\nプログラムの終了には 'exit'!\n\n入力 : ")
         if "next" == input1:
             nilai = False
+            nilais = True
             nilai2 = True
-            operation = input("操作は何ですか (+,-,*,:): ")
-            num1 = float(input("最初の番号: "))
-            num2 = float(input("2番目の番号: "))
-            if operation == "+":
-                hasil = num1 + num2
-            elif operation == "-":
-                hasil = num1 - num2
-            elif operation == "*":
-                hasil = num1 * num2
-            elif operation == ":":
-                hasil = num1 / num2
-            else:
-                print("無効な操作！、タイプ (+,-,*,:)！！！ ")
-            print(" ")
-            print("の答え " + str(num1) + " " + str(operation) + " " + str(num2) + " です: " + str(hasil))
-            print(" ")
-            while nilai2 == True:
-                playagain = input("また遊びたい？ (yes/no): ")
-                if playagain == "yes":
-                    nilai = True
-                    nilai2 = False
-                elif playagain == "no":
-                    nilai2 = False
-                    print("遊んでくれてありがとう!!!")
+            while nilais == True:
+                operation = input("操作は何ですか (+,-,*,:): ")
+                num1 = float(input("最初の番号: "))
+                num2 = float(input("2番目の番号: "))
+                if operation == "+":
+                    hasil = num1 + num2
+                elif operation == "-":
+                    hasil = num1 - num2
+                elif operation == "*":
+                    hasil = num1 * num2
+                elif operation == ":":
+                    hasil = num1 / num2
                 else:
-                    nilai = True
-                    print("yesまたはnoと入力します ")
+                    print("無効な操作！、タイプ (+,-,*,:)！！！ ")
+                print(" ")
+                print("の答え " + str(num1) + " " + str(operation) + " " + str(num2) + " です: " + str(hasil))
+                print(" ")
+                nilai2 = True
+                while nilai2 == True:
+                    playagain = input("また遊びたい？ (yes/no): ")
+                    if playagain == "yes":
+                        nilai = False
+                        nilai2 = False
+                        nilais = True
+                    elif playagain == "no":
+                        nilai2 = False
+                        nilai = True
+                        nilais = False
+                        print("遊んでくれてありがとう!!!")
+                    else:
+                        nilai = True
+                        print("yesまたはnoと入力します ")
         elif "lang" == input1:
             nilai = False
             nilai3 = True
